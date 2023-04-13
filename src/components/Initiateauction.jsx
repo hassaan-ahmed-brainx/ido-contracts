@@ -1,6 +1,6 @@
 import { useState } from "react";
-import "/home/brainx/Desktop/ido-contracts-app/ido-contracts-app/src/index.css";
-import * as Constants from "/home/brainx/Desktop/ido-contracts-app/ido-contracts-app/src/constants/constants.js";
+import "../index.css";
+import * as Constants from "../constants/constants";
 
 const Initiateauction = () => {
   const [auctionTokken, setAuctionTokken] = useState("");
@@ -55,8 +55,8 @@ const Initiateauction = () => {
   };
 
   return (
-    <div className="Initiate_Auction">
-      <div className="Line_Break">
+    <div className="initiate-auction line-break">
+      <div>
         <label htmlFor="auctionToken">Auctioning Tokken Address: </label>
         <input
           type="text"
@@ -66,7 +66,7 @@ const Initiateauction = () => {
         />
       </div>
 
-      <div className="Line_Break">
+      <div>
         <label htmlFor="biddingToken">Biddng Tokken Address: </label>
         <input
           type="text"
@@ -76,7 +76,7 @@ const Initiateauction = () => {
         />
       </div>
 
-      <div className="Line_Break">
+      <div>
         <label htmlFor="orderCancellationEndDate">
           Order Cancellation End Date:
         </label>
@@ -88,7 +88,7 @@ const Initiateauction = () => {
         />
       </div>
 
-      <div className="Line_Break">
+      <div>
         <label htmlFor="auctionEndDate">Auction End Date: </label>
         <input
           type="number"
@@ -98,7 +98,7 @@ const Initiateauction = () => {
         />
       </div>
 
-      <div className="Line_Break">
+      <div>
         <label htmlFor="auctionedSellAmount">Auctioned Sell Amount: </label>
         <input
           type="number"
@@ -108,7 +108,7 @@ const Initiateauction = () => {
         />
       </div>
 
-      <div className="Line_Break">
+      <div>
         <label htmlFor="minBuyAmount">Minimum Buy Amount: </label>
         <input
           type="number"
@@ -118,7 +118,7 @@ const Initiateauction = () => {
         />
       </div>
 
-      <div className="Line_Break">
+      <div>
         <label htmlFor="minimumBiddingAmountPerOrder">
           Minimum Bidding Amount Per Order:
         </label>
@@ -130,7 +130,7 @@ const Initiateauction = () => {
         />
       </div>
 
-      <div className="Line_Break">
+      <div>
         <label htmlFor="minFundingThreshold">Minimum Funding Threshold: </label>
         <input
           type="text"
